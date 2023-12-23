@@ -1,0 +1,13 @@
+dbt_snowflake_prj:
+  outputs:
+    dev:
+      account: edmzmge-jo38148
+      database: analytics
+      password: Vodu@s0210
+      role: transform_role
+      schema: dbt
+      threads: 1
+      type: snowflake
+      user: transform_user
+      warehouse: transform_wh
+  target: dev
