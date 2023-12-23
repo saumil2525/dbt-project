@@ -1,12 +1,12 @@
 
 
 SELECT
-    C.c_custkey AS c_custkey,
+    C.c_custkey,
     C.c_name,
     C.c_address,
     SUM(
         o.o_totalprice
-    )
+    ) AS totalprice
 FROM
     snowflake_sample_data.tpch_sf1.customer C
     LEFT JOIN snowflake_sample_data.tpch_sf1.orders o
