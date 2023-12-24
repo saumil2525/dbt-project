@@ -1,5 +1,10 @@
 -- Use the `ref` function to select from other models
 
-select *
-from analytics.dbt.my_first_dbt_model
-where id = 1
+
+SELECT
+    *,
+    True AS first_var
+FROM
+    analytics.dbt.first_model
+WHERE
+    id >= 200
